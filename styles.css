@@ -5,6 +5,7 @@ body {
 .header {
   width: 100%;
   margin-top: 27px;
+  height: 120vh;
 }
 nav {
   max-width: 1240px;
@@ -39,6 +40,10 @@ li .rectangle {
 }
 .header-heading {
   text-align: center;
+  margin-top: 200px;
+}
+.header-heading h1{
+  margin: 0;
 }
 .header-h1-bottom {
   color: #5ec4bc;
@@ -46,6 +51,11 @@ li .rectangle {
 .header-dates {
   margin: 0 auto;
   text-align: center;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
 }
 .header-dates p {
   display: inline-block;
@@ -54,10 +64,13 @@ li .rectangle {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
+  margin-top: 40px;
   margin-bottom: 150px;
   align-items: center;
 }
-.header-button-regisrtacija {
+.header-button-regisrtacija,
+.sponsors-slider-button,
+.logo-section-button {
   color: white;
   height: 39px;
   width: 124.11px;
@@ -83,6 +96,8 @@ li .rectangle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 10%;
 }
 .header-arrow-icon {
   height: 40px;
@@ -90,6 +105,7 @@ li .rectangle {
   display: flex;
   justify-content: center;
 }
+
 
 .schedule {
   width: 80%;
@@ -298,4 +314,168 @@ li .rectangle {
   text-align: left;
   white-space: nowrap;
   padding: 0;
+=======
+.first-section{
+  margin: 170px auto 0 auto;
+  width: 85%;
+}
+.first-section h1{
+  margin: 5px 0;
+  font-size: 46px;
+}
+.first-section p{
+  height: 88px;
+  width: 331px;
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.first-section-heading{
+  height: 220px;
+  width: 224px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+}
+.first-section-paragraph{
+  margin-top: 40px;
+}
+
+.sponsors-section{
+  width: 90%;
+  margin: 0 auto;
+}
+.sponsors-general-image-mask{
+  background-color: #F1F3F6;
+}
+.sponsors-general-image{
+  height: 230px;
+  width: 100%;
+  border-radius: 20px;
+}
+.sponsors-general-sponsors-logo{
+  height: 23px;
+  width: 92px;
+}
+.sponsors-general-content{
+  border-radius: 25px;
+  position: relative;
+  top: -40px;
+  background-color: beige;
+  padding: 10px;
+}
+.sponsors-general-content-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sponsors-general-content-heading h3{
+  height: 17px;
+  width: 116px;
+  color: #5EC4BC;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+.sponsors-general-content-heading h1{
+  height: 26px;
+  width: 175px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.sponsors-general-content-bottom{
+  width: 294px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+.sponsors-slder-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.sponsors-slider{
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  padding: 10px;
+}
+.sponsors-slider-slide{
+  min-width: 80%;
+  width: 80%;
+}
+.logo-section-logo-wrapper{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.logo-seciton-logo{
+  height: 40px;
+  width: 135px;
+}
+.logo-seciton-offers-wrapper{
+  width: 90%;
+  margin: 0 20px;
+  display: flex;
+  overflow: scroll;
+  padding: 10px;
+}
+.logo-seciton-offers-wrapper p{
+  height: 21px;
+  width: 136px;
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+.logo-seciton-offers-wrapper h2{
+  height: 24px;
+  width: 159px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+.logo-seciton-offer{
+  height: 280px;
+  width: 400px;
+}
+.logo-seciton-offer-logo{
+  height: 30px;
+  width: 160px;
+}
+.partners-games-friends-wrapper{
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.partners-logo{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.partners-logo-svg{
+  max-height: 250px;
+  max-width: 320px;
 }
