@@ -65,17 +65,20 @@
 
     <section class="schedule">
       <h1 class="schedule__title">Raspored</h1>
-      <div class="schedule__highlight">
-        <h2 class="schedule__highlight-number">1.</h2>
-        <h2 class="schedule__highlight-text">dan</h2>
+      <div class="schedule__highlights">
+      <div class="schedule__highlights-highlight schedule__highlights-highlight--selected">
+        <h2 class="schedule__highlight-number schedule__highlight-number--selected">1.</h2>
+        <h2 class="schedule__highlight-text schedule__highlight-text--selected">dan</h2>
       </div>
-      <div class="schedule__highlight">
+      <div class="schedule__highlights-highlight">
         <h2 class="schedule__highlight-number">2.</h2>
         <h2 class="schedule__highlight-text">dan</h2>
       </div>
+    </div>
       <div class="schedule__types">
-        <h2 class="schedule__types-type schedule__type--selected">
+        <h2 class="schedule__types-type schedule__types-type--selected">
           Predavanja
+          <div class="underline"></div>
         </h2>
         <h2 class="schedule__types-type">Radionice</h2>
         <h2 class="schedule__types-type">Campfire Talks</h2>
@@ -85,12 +88,17 @@
           <h3 class="schedule__event-time schedule__event--inactive">
             10:00 - 10:20
           </h3>
+          <div class="schedule__wrapper">
           <h2 class="schedule__event-name">Keynote otvaranje konferencije</h2>
+          </div>
         </div>
         <div class="schedule__events-event">
-          <h3 class="schedule__event-field">Dev</h3>
           <h3 class="schedule__event-time schedule__event--inactive">
             10:30 - 11:15
+          </h3>
+          <div class="schedule__wrapper">
+          <h3 class="schedule__event-field">Dev
+            <div class="underline"></div>
           </h3>
           <h2 class="schedule__event-name">
             Kompjuterski vid i duboko učenje u autonomnim vozilima
@@ -99,10 +107,14 @@
             Tonći Antunović (Machine Learning/AI Team Lead at Rimac Automobili)
           </h3>
         </div>
+        </div>
         <div class="schedule__events-event">
-          <h3 class="schedule__event-field">Design</h3>
           <h3 class="schedule__event-time schedule__event--inactive">
             11:25 - 12:10
+          </h3>
+          <div class="schedule__wrapper">
+          <h3 class="schedule__event-field">Design
+            <div class="underline"></div>
           </h3>
           <h2 class="schedule__event-name">
             Pokušaj, pogreška i uspjeh proizvoda
@@ -118,13 +130,19 @@
             tajnu - što je sve potrebno da bi proizvod bio uspješan?
           </p>
           <button class="schedule__event-button">
+
             Pogledaj predavanje <img src="assets/naviagion_icons/arrow-right-Modra.svg" />
+
           </button>
+          </div>
         </div>
         <div class="schedule__events-event">
-            <h3 class="schedule__event-field">Dev</h3>
             <h3 class="schedule__event-time schedule__event--inactive">
               12:20 - 13:20
+            </h3>
+            <div class="schedule__wrapper">
+            <h3 class="schedule__event-field">Dev
+              <div class="underline"></div>
             </h3>
             <h2 class="schedule__event-name">
                 Panel rasprava: “Digitalpocalipse - povratak u budućnost”
@@ -134,33 +152,46 @@
                 at Rimac Automobili), Dino Cikatić (Project Manager at ExtensionEngine), Toni Mastelić 
                 (Researcher at Ericsson Nikola Tesla) i Marin Šaban (Head of R&D at Hattrick)
             </h3>
+            </div>
           </div>
 
         <div class="schedule__events-event schedule__events-event--break">
           <h3 class="schedule__event-time schedule__event--inactive">
             13:20 - 13:50
           </h3>
+          <div class="schedule__wrapper">
           <h2 class="schedule__event-name">Ručak</h2>
+          </div>
 
         </div>
         <div class="schedule__events-event">
-          <h3 class="schedule__event-field">Dev</h3>
           <h3
             class="schedule__event-time schedule__event--active schedule__event-time--current"
           >
             13:50 - 14:35
           </h3>
+          <div class="schedule__wrapper">
+            <div class="schedule__field-wrapper">
+          <h3 class="schedule__event-field">Dev
+            <div class="underline"></div>
+          </h3>
+          <h3 class="schedule__event-current"><img src="assets/Oval-1.svg">&nbsp;U Tijeku</h3>
+        </div>
           <h2 class="schedule__event-name">
             Upravljanje Dronom koristeći JavaScript i React Native
           </h2>
           <h3 class="schedule__event-author schedule__event--active">
             Demir Selmanović (Software Developer at Toptal)
           </h3>
+          </div>
         </div>
         <div class="schedule__events-event">
-          <h3 class="schedule__event-field">Tech</h3>
           <h3 class="schedule__event-time schedule__event--active">
             14:45 - 15:30
+          </h3>
+          <div class="schedule__wrapper">
+          <h3 class="schedule__event-field">Tech
+            <div class="underline"></div>
           </h3>
           <h2 class="schedule__event-name">
             Biti ili ne biti poduzetnik - pitanje je sad!
@@ -168,12 +199,16 @@
           <h3 class="schedule__event-author schedule__event--active">
             Đulijano Nola (CTO at Crno Jaje)
           </h3>
+          </div>
         </div>
 
         <div class="schedule__events-event">
-          <h3 class="schedule__event-field">Tech</h3>
           <h3 class="schedule__event-time schedule__event--active">
             15:40 - 16:25
+          </h3>
+          <div class="schedule__wrapper">
+          <h3 class="schedule__event-field">Tech
+            <div class="underline"></div>
           </h3>
           <h2 class="schedule__event-name">
             Od studentske klupe do prve produkcije
@@ -181,20 +216,25 @@
           <h3 class="schedule__event-author schedule__event--active">
             Toma Zelić (Team Lead at ExtensionEngine)
           </h3>
-
+          </div>
         </div>
         <div class="schedule__events">
             <div class="schedule__events-event schedule__events-event--break">
-              <h3 class="schedule__event-time schedule__event--inactive">
+              <h3 class="schedule__event-time schedule__event--active">
                 16:25 - 16:40
               </h3>
+              <div class="schedule__wrapper">
               <h2 class="schedule__event-name">Pauza</h2>
+              </div>
             </div>
       </div>
       <div class="schedule__events-event">
-        <h3 class="schedule__event-field">Dizajn</h3>
         <h3 class="schedule__event-time schedule__event--active">
           16:40 - 17:25
+        </h3>
+        <div class="schedule__wrapper">
+        <h3 class="schedule__event-field">Dizajn
+          <div class="underline"></div>
         </h3>
         <h2 class="schedule__event-name">
             Od dizajna do proizvoda: Stvaranje iz nepoznatog
@@ -203,11 +243,15 @@
         <h3 class="schedule__event-author schedule__event--active">
             Vladimir Končar (Design Team Lead at FIVE)
         </h3>
+        </div>
       </div>
       <div class="schedule__events-event">
-        <h3 class="schedule__event-field">Dev</h3>
         <h3 class="schedule__event-time schedule__event--active">
           17:35 - 18:20
+        </h3>
+        <div class="schedule__wrapper">
+        <h3 class="schedule__event-field">Dev
+          <div class="underline"></div>
         </h3>
         <h2 class="schedule__event-name">
             Tehnička iskustva razvoja globalnog SaaS proizvoda
@@ -215,11 +259,15 @@
         <h3 class="schedule__event-author schedule__event--active">
             Domagoj Pavlešić (Founder at Sessionize.com)
         </h3>
+        </div>
       </div>
       <div class="schedule__events-event">
-        <h3 class="schedule__event-field">Tech</h3>
         <h3 class="schedule__event-time schedule__event--active">
           18:30 - 19:15
+        </h3>
+        <div class="schedule__wrapper">
+        <h3 class="schedule__event-field">Tech
+          <div class="underline"></div>
         </h3>
         <h2 class="schedule__event-name">
             Windows 10 virtualizacija - brzo se uči, a još lakše koristi
@@ -227,6 +275,7 @@
         <h3 class="schedule__event-author schedule__event--active">
             Ljubo Brodarić (Senior System Engineer at Atos)
         </h3>
+        </div>
       </div>
     </section>
 
