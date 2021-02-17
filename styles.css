@@ -1,56 +1,92 @@
-body{
-    margin: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
-.header{
-    width: 100%;
-    margin-top: 27px;
+.header {
+  width: 100%;
+  margin-top: 27px;
 }
-nav{
-   max-width: 1240px;
-   display: flex;
-   justify-content: space-between; 
-   flex-direction: row;
-   margin: 0 auto;
-   height: 52px;
-   padding-left: calc(100% / 12);
-   padding-right: calc(100% / 12);
+nav {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 52px;
+  padding-left: calc(100% / 12);
+  padding-right: calc(100% / 12);
 }
-.dump-days-logo{
-    height: 52px;
-    width: 205px;
-    display: none;
+.dump-days-logo {
+  height: 52px;
+  width: 205px;
+  display: none;
 }
-ul{
-    display: none;
+ul {
+  display: none;
 }
-li{
-    list-style: none;
-    display: inline-block;
-    padding: 15px 25px;
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 25px;
 }
-li .rectangle{
-    height: 30px;
-    width: 2px;
-    border-style: solid;
-    border-radius: 11px;
-    border-color: #1A3C44;
-    color: #1A3C44;
+li .rectangle {
+  height: 30px;
+  width: 2px;
+  border-style: solid;
+  border-radius: 11px;
+  border-color: #1a3c44;
+  color: #1a3c44;
 }
-.header-heading{
-    text-align: center;
+.header-heading {
+  text-align: center;
 }
-.header-h1-bottom{
+.header-h1-bottom {
+  color: #5ec4bc;
+}
+.header-dates {
+  margin: 0 auto;
+  text-align: center;
+}
+.header-dates p {
+  display: inline-block;
+}
+.header-buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  align-items: center;
+}
+.header-button-regisrtacija {
+  color: white;
+  height: 39px;
+  width: 124.11px;
+  border-radius: 10px;
+  background-color: #5ec4bc;
+  box-shadow: 0 5px 10px 0 rgba(39, 199, 189, 0.35);
+  border: none;
+}
+.header-button-prijava{
+    border: none;
+    height: 19px;
+    width: 50px;
     color: #5EC4BC;
-}
-.header-dates{
-    margin: 0 auto;
+    font-family: "Fuse V.2 Display";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
     text-align: center;
 }
-.header-dates p{
-    display: inline-block;
+.header-saznajvise {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.header-buttons-wrapper{
-    ¸
-    ćĆheader-buttons-wrapper
-     
+.header-arrow-icon {
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
