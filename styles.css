@@ -342,15 +342,6 @@ li .rectangle {
   margin: 5px 0;
   font-size: 46px;
 }
-.first-section p{
-  height: 88px;
-  width: 331px;
-  color: #7A8E94;
-  font-family: "Fuse V.2 Display";
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: 22px;
-}
 .first-section-heading{
   height: 220px;
   width: 224px;
@@ -363,6 +354,12 @@ li .rectangle {
 }
 .first-section-paragraph{
   margin-top: 40px;
+  height: 88px;
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
 }
 
 .sponsors-section{
