@@ -1,6 +1,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  min-width: 300px;
 }
 .header {
   margin-top: 27px;
@@ -15,30 +16,70 @@ nav {
   height: 52px;
   padding-left: calc(100% / 12);
   padding-right: calc(100% / 12);
-}
-.nav-menu-icon{
-
+  margin-top: 20px;
 }
 .dump-days-logo {
   height: 52px;
   width: 205px;
   display: none;
 }
-ul {
+.ul-wrapper {
   display: none;
 }
-li {
-  list-style: none;
+.ul-wrapper p {
   display: inline-block;
-  padding: 15px 25px;
+  height: 21px;
+  width: 56px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.36px;
+  line-height: 21px;
+  margin-left: 50px;
 }
-li .rectangle {
-  height: 30px;
-  width: 2px;
-  border-style: solid;
-  border-radius: 11px;
-  border-color: #1a3c44;
-  color: #1a3c44;
+.nav-menu-icon{
+  height: 50px;
+}
+.nav-menu-checkbox{
+  display: none;
+}
+@media only screen and (min-width: 1024px){
+  .dump-logo{
+    display: none;
+  }
+  .dump-days-logo{
+    display: block;
+  }
+  .nav-menu-icon{
+    display: none;
+  }
+  .ul-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-for-border{
+    border-right: 3px solid;
+    border-color: black;
+    padding-right: 40px;
+  }
+  nav{
+    padding-right: 0;
+  }
+}
+.paragraph-to-underline{
+  position: relative;
+}
+.paragraph-to-underline:after{
+  content:"";
+  position:absolute;
+  bottom: -2px;
+  left: 0;
+  right: -42px;
+  background:#5EC4BC;
+  height:5px;
+  border-radius: 15%;
+
 }
 .header-heading {
   text-align: center;
@@ -79,7 +120,8 @@ li .rectangle {
 }
 .header-button-regisrtacija,
 .sponsors-slider-button,
-.logo-section-button {
+.logo-section-button,
+.registrate-section-button-registrate {
   color: white;
   height: 39px;
   width: 124.11px;
@@ -88,7 +130,8 @@ li .rectangle {
   box-shadow: 0 5px 10px 0 rgba(39, 199, 189, 0.35);
   border: none;
 }
-.header-button-prijava {
+.header-button-prijava,
+.registrate-section-button-prijava {
   border: none;
   height: 19px;
   width: 50px;
@@ -123,8 +166,17 @@ li .rectangle {
   display: flex;
   justify-content: center;
 }
-
-
+.header-saznajvise:hover{
+  animation: floating 1s ease-in-out alternate infinite;
+}
+@keyframes floating{
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translateY(30px);
+  }
+}
 .schedule {
   width: 80%;
   margin: auto;
@@ -335,8 +387,9 @@ li .rectangle {
   padding: 0;
 }
 .first-section{
-  margin: 170px auto 0 auto;
+  margin: 0 auto;
   width: 85%;
+  margin-bottom: 25px;
 }
 .first-section h1{
   margin: 5px 0;
@@ -383,12 +436,12 @@ li .rectangle {
 .sponsors-general{
   width: 90%;
   margin: 0 auto;
+  min-width: 300px;
 }
 .sponsors-general-image-mask{
   background-color: #F1F3F6;
 }
 .sponsors-general-image{
-  height: 230px;
   width: 100%;
   border-radius: 20px;
 }
@@ -616,4 +669,71 @@ li .rectangle {
 .partners-logo-svg{
   max-height: 250px;
   max-width: 320px;
+}
+
+.registrate-section{
+  width: 90%;
+}
+.registrate-section h1{
+  text-align: center;
+  margin: 0 auto;
+  height: 114px;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+.registrate-section-information{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.registrate-section-ingormation-paragraph{
+  width: 70%;
+  height: 70px;
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 20px;
+}
+.registrate-section-big-image{
+  height: 400px;
+  position: relative;
+  top: -120px;
+  left: 30px;
+  overflow: hidden;
+}
+.have-questions-left h1{
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+  text-align: center;
+}
+.have-questions-left p{
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.footer-left p{
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+.footer-logo{
+  height: 50px;
+  width: 50px;
 }
