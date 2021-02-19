@@ -133,6 +133,7 @@ li .rectangle {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .schedule__title {
