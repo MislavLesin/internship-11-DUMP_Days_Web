@@ -621,16 +621,32 @@ li .rectangle {
 }
 
 .previous-days {
-  height: 1200px;
+  height: 25%;
+}
+
+.previous-days__title{
+  color: #1A3C44;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+  text-align: center;
 }
 
 .previous-days__images {
-  height: 95%;
+  height: fit-content;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+  column-gap: 25px;
 }
 
 .previous-days__element__image{
   max-width: 100%;
+  max-height: 300px;
 }
 
 .item-a{
@@ -662,7 +678,7 @@ li .rectangle {
 }
 
 .previous-days__slide {
-  width: 100%;
+  min-width: max(100%, 950px);
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -670,6 +686,8 @@ li .rectangle {
   grid-gap: 50px;
   justify-content: center;
   margin: 0;
+  animation: presentation--mobile 40s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
 .previous-days__element__border {
@@ -719,7 +737,7 @@ li .rectangle {
 
 .previous-days__border__year {
   position: absolute;
-  font-size: 24px;
+  font-size: 20px;
   left: 4px;
   top: 90%;
   margin: 0;
@@ -737,6 +755,7 @@ li .rectangle {
   display: flex;
   align-content: center;
   justify-content: center;
+  max-height: 300px;
 }
 
 .previous-days__element__title{
@@ -762,6 +781,75 @@ li .rectangle {
   }
   .previous-days__element__title{
     font-size: 30px;
-    line-height: 180px;
+    line-height: 200px;
+  }
+  .previous-days__element__title{
+    font-size: 24px;
+  }
+  .previous-days__slide{
+    animation: none;
+    animation: presentation 20s ease-in-out infinite;
+    animation-direction: alternate;
   }
 }
+
+@keyframes presentation {
+  from {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes presentation--mobile {
+  from {
+    transform: translateX(0%);
+  }
+  9% {
+    transform: translateX(0%);
+  }
+  18% {
+    transform: translateX(-50%);
+  }
+  27% {
+    transform: translateX(-50%);
+  }
+  36% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  54% {
+    transform: translateX(-150%);
+  }
+  63% {
+    transform: translateX(-150%);
+  }
+  72% {
+    transform: translateX(-200%);
+  }
+  81% {
+    transform: translateX(-200%);
+  }
+  90% {
+    transform: translateX(-250%);
+  }
+  to {
+    transform: translateX(-250%);
+  }
+}
+
