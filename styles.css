@@ -133,7 +133,7 @@ nav {
 .header-button-prijava,
 .registrate-section-button-prijava {
   border: none;
-  height: 19px;
+  height: 35px;
   width: 50px;
   color: #5ec4bc;
   font-family: "Fuse V.2 Display";
@@ -672,7 +672,9 @@ nav {
 }
 
 .registrate-section{
+  max-width: 550px;
   width: 90%;
+  margin: 0 auto;
 }
 .registrate-section h1{
   text-align: center;
@@ -686,16 +688,24 @@ nav {
   line-height: 38px;
   margin-bottom: 30px;
 }
+.registrate-section-informaiton-wrapper{
+  max-width: 450px;
+  width: 90%;
+  margin: 0 auto;
+}
 .registrate-section-information{
   margin: 0 auto;
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.registrate-section-ingormation-paragraph{
+.registrate-section-information-icon{
+  margin: auto;
+}
+.registrate-section-information-paragraph{
   width: 70%;
-  height: 70px;
+  height: 50px;
   color: #7A8E94;
   font-family: "Fuse V.2 Display";
   font-size: 14px;
@@ -703,12 +713,77 @@ nav {
   line-height: 22px;
   padding: 20px;
 }
+.registrate-section-buttons-wrapper{
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+}
+.big-image-wrapper{
+  overflow-x: hidden;
+  top: -125px;
+  position: relative;
+}
 .registrate-section-big-image{
   height: 400px;
   position: relative;
-  top: -120px;
+  top: -35px;
   left: 30px;
-  overflow: hidden;
+}
+@media only screen and (min-width: 340px){
+  .registrate-section-big-image{
+    top: 0;
+  }
+}
+@media only screen and (min-width: 400px){
+  .registrate-section-big-image{
+    position: relative;
+    top: 70px;
+    left: 30%;
+  }
+  .big-image-wrapper{
+    top: -125px;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .registrate-section{
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 120px;
+  }
+  .big-image-wrapper{
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    overflow: visible;
+    top: 0;
+   left: 0;
+  }
+  .registrate-section h1{
+    position: relative;
+    left: 120px;
+    text-align: left;
+  }
+  .registrate-section-big-image{
+    top: 0;
+  }
+  .registrate-section-information-paragraph{
+    padding: 0;
+  }
+  .registrate-section-buttons-wrapper{
+    margin-left: 65px;
+  }
+}
+@media only screen and (min-width: 600px){
+  .have-questions-section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+}
+.have-questions-section{
+  width: 75%;
+  margin: auto;
 }
 .have-questions-left h1{
   color: #1A3C44;
@@ -717,7 +792,7 @@ nav {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 38px;
-  text-align: center;
+  margin-bottom: 0;
 }
 .have-questions-left p{
   color: #7A8E94;
@@ -726,12 +801,59 @@ nav {
   letter-spacing: 0;
   line-height: 22px;
 }
+.have-questions-right button{
+  margin: 10px;
+  margin-left: 0;
+}
+.facebook-button{
+  height: 40px;
+  width: 135px;
+  border: none;
+  border-radius: 7px;
+  background-color: #0084FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.have-questions-messinger-logo{
+  height: 35px;
+  width: 30px;
+  margin: 0;
+}
+.have-questions-arrow{
+  height: 35px;
+  width: 15px;
+  margin: 0;
+  margin-left: 10px;
+}
+.question-button{
+  height: 40px;
+  width: 135px;
+  border: none;
+  border-radius: 7px;
+  background-color: #18b8f8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
 .footer-left p{
   color: #7A8E94;
   font-family: "Fuse V.2 Display";
   font-size: 12px;
   letter-spacing: 0;
   line-height: 21px;
+  margin-top: 5px;
 }
 .footer-logo{
   height: 50px;
